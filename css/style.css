@@ -1,0 +1,993 @@
+.mon-font {
+  font-family: "Montserrat", sans-serif; }
+
+.play-font {
+  font-family: "Playfair Display", serif; }
+
+.blue-color {
+  color: #1E2A53; }
+
+.white-color {
+  color: white; }
+
+/* PLUGINS */
+/* BASE STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.4rem;
+  color: #30363C;
+  font-family: "Azo Sans Tn"; }
+
+h1, h2, h3, h4, h4, h5, h6 {
+  font-family: "Playfair Display", serif; }
+
+.commonBtn, .getTouch, .seeMoreBtnProject {
+  font-family: "Azo Sans";
+  background: #1E2A53;
+  color: white;
+  text-transform: uppercase;
+  padding: 1.2rem 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  font-size: 1.4rem; }
+  .commonBtn:hover, .getTouch:hover, .seeMoreBtnProject:hover {
+    text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.commonH2 {
+  text-align: center;
+  font-size: 4rem;
+  color: #1E2A53;
+  line-height: 5.2rem;
+  margin-bottom: 5rem; }
+
+.border-bottom {
+  border-bottom: 1px solid #C09870; }
+
+.border-right {
+  border-right: 1px solid #C09870; }
+
+/* LAYOUTS */
+/* MODULES */
+.container-semi {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+  width: 100%; }
+
+/* MODULES */
+.navbar {
+  padding: 0; }
+
+.navbar-collapse {
+  justify-content: center; }
+
+nav {
+  text-transform: uppercase;
+  font-family: "Azo Sans"; }
+  nav a {
+    color: #58595B; }
+    nav a:hover {
+      text-decoration: none; }
+
+.myNavMenu li {
+  margin-right: 1.7rem;
+  font-weight: 600;
+  font-family: "Azo Sans";
+  letter-spacing: 0.6px;
+  line-height: 9rem;
+  font-size: 1.2rem; }
+  .myNavMenu li:last-child {
+    margin: 0; }
+.myNavMenu .current_page_item {
+  border-bottom: 4px solid #C09870;
+  font-weight: 700; }
+
+.navBarOthers {
+  display: flex;
+  align-items: center; }
+  .navBarOthers .letfLogo {
+    width: 35%;
+    padding: 1rem 0;
+    margin-left: 2rem; }
+  .navBarOthers .rightNavbar {
+    width: 65%;
+    margin-left: 3rem; }
+
+.homeHeader {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid white;
+  font-family: "Azo Sans";
+  z-index: 999; }
+  .homeHeader a {
+    color: white; }
+  .homeHeader nav {
+    justify-content: center; }
+
+.menuDrawer {
+  background: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: none;
+  z-index: 9999;
+  transition: 2s; }
+  .menuDrawer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    .menuDrawer ul li {
+      font-size: 5rem;
+      text-transform: uppercase; }
+
+.menuDrawer.active {
+  display: block;
+  width: 100%;
+  right: 0; }
+  .menuDrawer.active a {
+    color: #C09870; }
+
+.menuToggle {
+  display: none;
+  margin-left: auto;
+  margin-right: 3rem;
+  position: relative;
+  transition-duration: 0.5s; }
+
+.closeBar {
+  position: absolute;
+  right: 3rem;
+  top: 6rem; }
+
+.bannerDesign {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover; }
+  .bannerDesign video {
+    width: 100%;
+    height: 100%; }
+  .bannerDesign::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+    width: 100%; }
+
+.getTouch {
+  margin-top: 1.4rem;
+  background: #092530;
+  font-weight: 600;
+  letter-spacing: 0.4px; }
+
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  position: relative;
+  z-index: 9;
+  margin-top: 2rem;
+  padding: 0 1.4rem; }
+
+.bannerHeadline {
+  color: white;
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: 400;
+  margin: 2rem 0; }
+
+.indexFeaturesAll {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative; }
+  .indexFeaturesAll a {
+    color: #1E2A53; }
+
+.indexFeatures {
+  position: relative;
+  background: #F3F4F6;
+  width: calc(100% / 3); }
+  .indexFeatures img {
+    width: 100%;
+    display: none; }
+  .indexFeatures:nth-child(2) {
+    border-right: 1px solid #E0E0E0; }
+  .indexFeatures::after {
+    content: "";
+    position: absolute;
+    background: #C09870;
+    height: 48px;
+    width: 2px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%); }
+  .indexFeatures .featuresLearnMore {
+    display: none;
+    color: white; }
+
+.indexFeatures.active img {
+  display: block; }
+.indexFeatures.active .featuresTitle a {
+  color: white; }
+.indexFeatures.active .featuresLearnMore {
+  display: block; }
+.indexFeatures.active::after {
+  background: white; }
+
+.featuresTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.7rem;
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; }
+  .featuresTitle a {
+    text-decoration: none; }
+
+.featuresLearnMore {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: white;
+  position: absolute;
+  bottom: 1.4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.4px; }
+
+.indexTestimonial {
+  text-align: center;
+  padding: 4rem 0; }
+  .indexTestimonial::after {
+    content: "";
+    position: absolute;
+    background: #C09870;
+    height: 40px;
+    width: 2px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50%; }
+
+.testimonialComma {
+  width: 30px;
+  height: 30px;
+  background: #6E1917;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin: auto;
+  line-height: 30px;
+  text-align: center;
+  color: white; }
+
+.testThumb {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: auto; }
+  .testThumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+
+.testimonialTitle {
+  font-size: 1.6rem;
+  color: #83672D;
+  margin-top: 1.6rem;
+  font-family: "Azo Sans"; }
+
+.testDesignation {
+  font-family: "Azo Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px; }
+
+.testmonialContent {
+  font-size: 4.2rem;
+  max-width: 1100px;
+  margin: auto;
+  line-height: 6.2rem;
+  font-family: "Playfair Display", serif;
+  color: #58595B;
+  margin-top: 2.4rem; }
+
+.indexCovidSec img {
+  width: 100%; }
+
+.covidProgramSec {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #092530; }
+  .covidProgramSec::after {
+    content: "";
+    position: absolute;
+    background: #C09870;
+    height: 24px;
+    width: 2px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 15%; }
+  .covidProgramSec h2 {
+    font-size: 2rem;
+    font-family: "Azo Sans";
+    color: #C09870;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Azo Sans"; }
+  .covidProgramSec p {
+    color: white;
+    max-width: 540px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-family: "Azo Sans Lt"; }
+  .covidProgramSec .programLearnMore {
+    color: #C09870;
+    font-size: 1.6rem;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    margin-top: 5rem; }
+
+.footer {
+  background: #30363C;
+  padding: 5rem 0;
+  color: white;
+  font-family: "Azo Sans"; }
+  .footer p {
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
+  .footer h3 {
+    font-family: "Azo Sans";
+    font-size: 1.4rem;
+    color: #C09870;
+    letter-spacing: 1px;
+    margin-bottom: 2rem; }
+
+.footerBottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 1.5rem;
+  padding-top: 5rem;
+  font-family: "Azo Sans Lt"; }
+
+.designedBy {
+  margin-left: auto; }
+
+/* MODULES */
+.pageBanner {
+  background: #092530; }
+
+.projectBannerContent {
+  max-width: 792px;
+  margin: auto;
+  text-align: center;
+  padding: 10rem 0;
+  position: relative; }
+  .projectBannerContent::after {
+    content: "";
+    position: absolute;
+    background: #C09870;
+    height: 80px;
+    width: 2px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50%;
+    bottom: -8.5%; }
+  .projectBannerContent h3 {
+    color: white;
+    margin-top: 3rem;
+    font-size: 3rem;
+    line-height: 4.2rem;
+    letter-spacing: 1px;
+    font-weight: 400; }
+  .projectBannerContent h1 {
+    color: #C09870;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Azo Sans";
+    letter-spacing: 2px; }
+  .projectBannerContent p {
+    color: white;
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    color: #C1D2E7;
+    font-family: "Azo Sans"; }
+
+.projectBannerSecondSec {
+  text-align: center;
+  padding: 8rem 0;
+  max-width: 792px;
+  margin: auto; }
+  .projectBannerSecondSec p {
+    font-size: 1.7rem;
+    line-height: 3.4rem;
+    color: #30363C;
+    font-family: "Azo Sans Lt"; }
+
+.secondDivTitle {
+  color: #83672D;
+  text-transform: uppercase;
+  font-family: "Azo Sans";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem; }
+
+.projectPosts {
+  margin-bottom: 4rem; }
+  .projectPosts a {
+    color: #1E2A53; }
+    .projectPosts a:hover {
+      text-decoration: none; }
+
+.projectPostFeatures {
+  max-width: 355px;
+  height: 355px;
+  width: 100%; }
+  .projectPostFeatures img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.projectEachTitle {
+  position: relative;
+  margin: 1.4rem 0; }
+
+.projectEachCat {
+  font-family: "Azo Sans";
+  display: flex;
+  margin-left: 1.4rem;
+  align-items: center;
+  color: #1E2A53;
+  font-size: 1.6rem; }
+  .projectEachCat::after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: #1E2A53;
+    position: absolute;
+    left: 0; }
+
+.customFaqTopicTitle {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  color: #30363C; }
+  .customFaqTopicTitle a {
+    color: #30363C; }
+    .customFaqTopicTitle a:hover {
+      text-decoration: none; }
+
+.projectAuthorName {
+  margin-top: 0.8rem;
+  font-family: "Azo Sans Lt"; }
+  .projectAuthorName p {
+    margin: 0;
+    color: #58595B; }
+
+.singleProjectTop {
+  background: #F3F4F6;
+  text-align: center;
+  position: relative; }
+  .singleProjectTop::after {
+    content: "";
+    position: absolute;
+    background: #C09870;
+    height: 40px;
+    width: 2px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 0; }
+
+.breadCrumbType {
+  color: #30363C;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+  border: 1px solid #E0E0E0;
+  font-family: "Azo Sans"; }
+
+.singlePageCurrentCat a {
+  color: #83672D; }
+
+.singlePageCustomTitle {
+  padding: 7rem 0;
+  font-size: 4rem;
+  letter-spacing: 0.8px;
+  line-height: 5.2rem;
+  margin: 0; }
+
+.singlePostFeaturesImg {
+  width: 100%;
+  height: 588px; }
+  .singlePostFeaturesImg img.attachment-post-thumbnail {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.mainSingleContent {
+  margin: auto;
+  border-bottom: 1px solid #C09870;
+  padding-bottom: 4rem; }
+  .mainSingleContent p {
+    width: 588px;
+    margin: 4rem auto;
+    color: #30363C;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-family: "Azo Sans Lt"; }
+
+.wp-block-columns .wp-block-column figcaption {
+  text-align: left; }
+.wp-block-columns .wp-block-column:first-child {
+  text-align: center; }
+
+.wp-block-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.projectCatTop {
+  background: #F3F4F6;
+  text-align: center;
+  padding: 5.6rem 0;
+  position: relative; }
+  .projectCatTop::after {
+    content: "";
+    position: absolute;
+    background: #C09870;
+    height: 40px;
+    width: 2px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 0; }
+  .projectCatTop p {
+    font-weight: 600;
+    color: #83672D;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 2rem; }
+
+.customPostType {
+  font-family: "Azo Sans";
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
+.projectCatTitle {
+  font-size: 4rem;
+  line-height: 5.2rem;
+  letter-spacing: 0.8px;
+  color: #30363C; }
+
+.secondCatDivTitle {
+  color: #83672D;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.7rem;
+  font-family: "Azo Sans";
+  letter-spacing: 1px; }
+
+.projectCatSecondSec {
+  max-width: 70%;
+  margin: 3rem auto; }
+
+.secondCatDivPara {
+  font-size: 1.7rem;
+  color: #30363C;
+  line-height: 3.4rem;
+  font-family: "Azo Sans Lt"; }
+
+.projectCatSecondSec:first-child {
+  border-right: 1px solid #F3F4F6;
+  padding-right: 5rem; }
+
+.projectCatSecondSec:nth-child(2) {
+  margin-left: 5rem; }
+
+.projectCatSecondDiv {
+  margin: 4.6rem 0; }
+
+.firstProjectCatDiv {
+  display: flex;
+  max-width: 70%;
+  margin: auto;
+  border-bottom: 1px solid #83672D; }
+
+.seeMoreBtnSec {
+  margin: 5rem 0;
+  text-align: center;
+  border-bottom: 1px solid #83672D;
+  padding: 5rem 0; }
+
+.exploreTheme {
+  color: #1E2A53;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 5rem; }
+
+.singlePostSecondSec {
+  font-size: 2rem; }
+  .singlePostSecondSec .container {
+    padding: 10rem 0;
+    border-bottom: 1px solid #C09870; }
+  .singlePostSecondSec div {
+    border-right: 1px solid #E0E0E0; }
+    .singlePostSecondSec div:last-child {
+      border: none; }
+  .singlePostSecondSec h2 {
+    font-family: "Azo Sans";
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    color: #83672D;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .singlePostSecondSec i {
+    color: #83672D;
+    margin-left: 0.3rem;
+    font-size: 1.4rem; }
+  .singlePostSecondSec small {
+    font-size: 1.4rem;
+    font-family: "Azo Sans Lt"; }
+  .singlePostSecondSec p {
+    font-family: "Azo Sans Lt"; }
+    .singlePostSecondSec p a {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      color: #30363C;
+      font-weight: 700;
+      letter-spacing: 0.4px; }
+    .singlePostSecondSec p img {
+      margin-left: 0.4rem; }
+  .singlePostSecondSec ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Azo Sans Lt"; }
+    .singlePostSecondSec ul li {
+      margin-top: 1rem;
+      white-space: nowrap; }
+      .singlePostSecondSec ul li img {
+        margin-right: 0.3rem; }
+
+.pageProject {
+  border-bottom: 1px solid #C09870;
+  padding-bottom: 5rem; }
+
+.aboutWhatWeFound {
+  padding: 6.4rem 0; }
+  .aboutWhatWeFound h3 {
+    color: #6E1917;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Azo Sans";
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem; }
+  .aboutWhatWeFound p {
+    color: #58595B;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    max-width: 292px;
+    font-family: "Azo Sans"; }
+
+.aboutPageLearnMore {
+  text-align: center;
+  margin: 5rem 0; }
+
+.founderStory {
+  color: #30363C;
+  padding-bottom: 5rem; }
+  .founderStory h3 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem; }
+  .founderStory h4 {
+    font-family: "Azo Sans";
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-weight: 600; }
+  .founderStory p {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    margin-top: 1.4rem;
+    max-width: 556px;
+    font-family: "Azo Sans"; }
+
+.ourTeam {
+  border-top: 1px solid #C09870;
+  padding: 5rem 0; }
+  .ourTeam .row {
+    margin-bottom: 8rem; }
+
+.aboutUsTeamMember {
+  border-right: 1px solid #E0E0E0;
+  padding-right: 2rem; }
+  .aboutUsTeamMember img {
+    width: 100%; }
+  .aboutUsTeamMember h3 {
+    font-size: 3rem;
+    line-height: 4.2rem;
+    letter-spacing: 1px;
+    color: #30363C;
+    margin: 1.4rem 0; }
+  .aboutUsTeamMember h4 {
+    font-family: "Azo Sans";
+    text-transform: uppercase;
+    color: #58595B;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    font-weight: 600; }
+  .aboutUsTeamMember p {
+    color: #58595B;
+    font-family: "Azo Sans"; }
+
+.youCanHelp {
+  background: #4B1222;
+  text-align: center;
+  padding: 10rem 0;
+  position: relative; }
+  .youCanHelp::after {
+    content: "";
+    position: absolute;
+    background: #C09870;
+    height: 24px;
+    width: 2px;
+    z-index: 999;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 15%; }
+  .youCanHelp h2 {
+    font-family: "Azo Sans";
+    text-transform: uppercase;
+    color: #C09870;
+    font-weight: 600;
+    letter-spacing: 1.7px; }
+  .youCanHelp p {
+    max-width: 900px;
+    margin: 2rem auto;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .youCanHelp a {
+    text-transform: uppercase;
+    color: #C09870;
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 0.4px; }
+
+.awardSection {
+  margin: 4rem auto; }
+
+.singleAward {
+  max-width: 792px;
+  padding: 4rem;
+  margin: auto; }
+  .singleAward .row {
+    border-bottom: 1px solid #E0E0E0; }
+    .singleAward .row div {
+      padding-bottom: 3rem; }
+  .singleAward h3 {
+    font-family: "Azo Sans";
+    color: #6E1917;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+  .singleAward p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-family: "Azo Sans"; }
+
+.whatWeFundSecondDiv .container {
+  border-bottom: 1px solid #C09870;
+  padding: 7.5rem;
+  font-family: "Azo Sans";
+  font-size: 1.8rem;
+  max-width: 70%; }
+  .whatWeFundSecondDiv .container p {
+    max-width: 588px;
+    margin: auto; }
+
+.howToApply {
+  padding: 4rem 0; }
+  .howToApply .container {
+    border-bottom: 1px solid #C09870; }
+  .howToApply .commonH2 {
+    text-align: left; }
+  .howToApply .applySec {
+    font-family: "Azo Sans";
+    max-width: 588px;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-bottom: 5rem; }
+  .howToApply p {
+    margin-bottom: 5rem; }
+
+.reports {
+  padding-bottom: 5rem; }
+  .reports h3 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #6E1917;
+    font-family: "Azo Sans";
+    font-weight: 700;
+    text-transform: uppercase; }
+  .reports p {
+    font-family: "Azo Sans";
+    line-height: 2.2rem; }
+  .reports a {
+    color: #58595B;
+    letter-spacing: 0.4px;
+    line-height: 2.2rem;
+    font-family: "Azo Sans";
+    font-weight: 700;
+    text-transform: uppercase; }
+  .reports img {
+    width: 100%; }
+  .reports .aboutMemberFeaturedImg img {
+    margin-bottom: 2rem; }
+  .reports .row div {
+    border-right: 1px solid #E0E0E0; }
+  .reports .downloadArrow {
+    width: initial; }
+
+.mediaAndPress {
+  padding: 7.5rem 0; }
+  .mediaAndPress .container {
+    padding: 7.5rem 0;
+    border-bottom: 1px solid #C09870; }
+  .mediaAndPress .fullDivMedia {
+    padding: 5rem 0;
+    border-bottom: 1px solid #E0E0E0; }
+    .mediaAndPress .fullDivMedia h3 {
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+      letter-spacing: 1px; }
+  .mediaAndPress img.attachment-large.size-large {
+    width: 100%; }
+  .mediaAndPress .normalDiv {
+    margin-top: 5rem; }
+    .mediaAndPress .normalDiv .aboutMemberFeaturedImg {
+      overflow: hidden; }
+    .mediaAndPress .normalDiv img.attachment-large.size-large {
+      margin-bottom: 1.7rem; }
+    .mediaAndPress .normalDiv h3 {
+      font-family: "Azo Sans Lt";
+      margin-bottom: 0.8rem;
+      font-size: 2.4rem;
+      line-height: 3.6rem; }
+    .mediaAndPress .normalDiv p {
+      font-family: "Azo Sans"; }
+    .mediaAndPress .normalDiv a {
+      font-weight: 700;
+      color: #58595B;
+      font-family: "Azo Sans";
+      text-transform: uppercase; }
+      .mediaAndPress .normalDiv a img.rightArrow {
+        margin-left: 1rem;
+        position: relative;
+        top: -1px; }
+
+/* Audit */
+/* Audit */
+/* Admin Dashboard Design */
+/* MODULES */
+@media screen and (max-width: 1317px) {
+  .container-semi {
+    width: 1250px; } }
+@media screen and (max-width: 1200px) {
+  .container-semi {
+    width: 1170px; } }
+@media screen and (max-width: 1025px) {
+  .myNavMenu {
+    display: none; }
+
+  .menuToggle {
+    display: block;
+    line-height: 9rem; }
+
+  .covidSecSecond {
+    order: 2; }
+
+  .covidProgramSec {
+    padding: 5rem 0; }
+    .covidProgramSec:after {
+      bottom: 0; }
+
+  .indexFeaturesAll .indexFeatures:first-child {
+    width: 50%; }
+  .indexFeaturesAll .indexFeatures:nth-child(2) {
+    width: 50%; }
+  .indexFeaturesAll .indexFeatures:nth-child(3) {
+    width: 100%; } }
+@media screen and (max-width: 992px) {
+  .container-semi {
+    width: 970px; } }
+@media screen and (max-width: 768px) {
+  .container-semi {
+    width: 750px; }
+
+  .projectPostFeatures {
+    max-width: 100%; }
+
+  .indexFeatures {
+    width: 100%; }
+
+  .firstProjectCatDiv {
+    display: block;
+    width: 100%;
+    padding: 0 1.4rem; }
+    .firstProjectCatDiv .projectCatSecondSec {
+      padding: 0;
+      max-width: 100%;
+      margin-left: 0; } }
+@media screen and (max-width: 576px) {
+  .container-semi {
+    width: 540px; } }
+
+/*# sourceMappingURL=style.css.map */

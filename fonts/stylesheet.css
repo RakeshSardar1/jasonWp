@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Azo Sans Tn';
+    src: url('AzoSans-Thin.eot');
+    src: local('Azo Sans Thin'), local('AzoSans-Thin'),
+        url('AzoSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('AzoSans-Thin.woff2') format('woff2'),
+        url('AzoSans-Thin.woff') format('woff'),
+        url('AzoSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('AzoSans-Regular.eot');
+    src: local('Azo Sans Regular'), local('AzoSans-Regular'),
+        url('AzoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AzoSans-Regular.woff2') format('woff2'),
+        url('AzoSans-Regular.woff') format('woff'),
+        url('AzoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Azo Sans Md';
+    src: url('AzoSans-Medium.eot');
+    src: local('Azo Sans Medium'), local('AzoSans-Medium'),
+        url('AzoSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AzoSans-Medium.woff2') format('woff2'),
+        url('AzoSans-Medium.woff') format('woff'),
+        url('AzoSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Azo Sans Lt';
+    src: url('AzoSans-Light.eot');
+    src: local('Azo Sans Light'), local('AzoSans-Light'),
+        url('AzoSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('AzoSans-Light.woff2') format('woff2'),
+        url('AzoSans-Light.woff') format('woff'),
+        url('AzoSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Azo Sans';
+    src: url('AzoSans-Bold.eot');
+    src: local('Azo Sans Bold'), local('AzoSans-Bold'),
+        url('AzoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AzoSans-Bold.woff2') format('woff2'),
+        url('AzoSans-Bold.woff') format('woff'),
+        url('AzoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

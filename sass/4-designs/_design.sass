@@ -1,0 +1,299 @@
+//Navbar
+header
+  // padding: 25px 0
+.navbar
+  padding: 0
+.navbar-collapse
+  justify-content: center
+nav
+  // justify-content: center   !important
+  text-transform: uppercase
+  font-family: $lato
+  a
+    color: $fadeGray
+    &:hover
+      text-decoration: none
+.myNavMenu
+  li
+    margin-right: $base-size + .3rem
+    font-weight: 600
+    font-family: $lato
+    letter-spacing: 0.6px
+    line-height: 9rem
+    font-size: $base-size - .2rem
+    &:last-child
+      margin: 0
+  .current_page_item
+    border-bottom: 4px solid $anotherGrey
+    font-weight: 700
+.navBarOthers
+  display: flex
+  align-items: center
+  // padding: $md-size 0
+  .letfLogo
+    width: 35%
+    padding: $normal-size 0
+    margin-left: $md-size
+  .rightNavbar
+    width: 65%
+    margin-left: $extra-mid-size
+.homeHeader
+  position: absolute
+  width: 100%
+  border-bottom: 1px solid white
+  font-family: $lato
+  z-index: 999
+  a
+    color: white
+  nav
+    justify-content: center
+.menuDrawer
+  background: white
+  position: fixed
+  top: 0
+  bottom: 0
+  width: 0
+  display: none
+  z-index: 9999
+  transition: 2s
+  ul
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100%
+    li
+      font-size: $extra-lg-size
+      text-transform: uppercase
+.menuDrawer.active
+  display: block
+  width: 100%
+  right: 0
+  a
+    color: $anotherGrey
+//Responsive Navbar
+.menuToggle
+  display: none
+  margin-left: auto
+  margin-right: $extra-mid-size
+  position: relative
+  transition-duration: 0.5s
+.closeBar
+  position: absolute
+  right: $extra-mid-size
+  top: $extra-lg-size + $normal-size
+//Banner Design
+.bannerDesign
+  position: relative
+  // z-index: -1
+  width: 100%
+  // max-height: 80vh
+  overflow: hidden
+  text-align: center
+  background-repeat: no-repeat
+  height: 100vh
+  background-size: cover
+  video
+    width: 100%
+    height: 100%
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    background: black
+    opacity: .5
+    z-index: 1
+    width: 100%
+.getTouch
+  @extend .commonBtn
+  // position: absolute
+  margin-top: $base-size
+  background: $custom-blue
+  font-weight: 600
+  letter-spacing: 0.4px
+.bannerContent
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: inherit
+  position: relative
+  z-index: 9
+  margin-top: $md-size
+  padding: 0 $base-size
+.bannerHeadline
+  color: white
+  font-size: $lg-size
+  line-height: 2 *$extra-mid-size
+  font-weight: 400
+  margin: $md-size 0
+
+
+//Index Features
+.indexFeaturesAll
+  display: flex
+  flex-wrap: wrap
+  position: relative
+  a
+    color: $blue
+
+.indexFeatures
+  position: relative
+  background: $fadeWhite
+  width: calc(100% / 3)
+  img
+    width: 100%
+    display: none
+  &:nth-child(2)
+    border-right: 1px solid $border
+  &::after
+    @include horizontalBar(48px)
+    bottom: 20%
+    transform: translate(-50%,-50%)
+  .featuresLearnMore
+    display: none
+    color: white
+.indexFeatures.active
+  img
+    display: block
+  .featuresTitle
+    a
+      color: white
+  .featuresLearnMore
+    display: block
+  &::after
+    background: white
+.featuresTitle
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  text-align: center
+  font-family: $play-font
+  font-size: 2.7rem
+  letter-spacing: 0.8px
+  font-weight: 400
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  a
+    text-decoration: none
+.featuresLearnMore
+  text-transform: uppercase
+  font-size: $md-size - .3rem
+  color: white
+  position: absolute
+  bottom: $base-size
+  left: 50%
+  transform: translate(-50%,-50%)
+  letter-spacing: 0.4px
+
+
+//Testimonial
+.indexTestimonial
+  text-align: center
+  padding: 4rem 0
+  &::after
+    @include horizontalBar(40px)
+.testimonialComma
+  width: 30px
+  height: 30px
+  background: $deepGray
+  border-radius: 50%
+  margin-bottom: 10px
+  margin: auto
+  line-height: 30px
+  text-align: center
+  color: white
+.testThumb
+  height: 80px
+  width: 80px
+  border-radius: 50%
+  margin: auto
+  img
+    width: 100%
+    height: 100%
+    border-radius: 50%
+
+.testimonialTitle
+  font-size: $base-size + .2rem
+  color: $grey
+  margin-top: $base-size + .2rem
+  font-family: $lato
+.testDesignation
+  font-family: $lato
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.4px
+.testmonialContent
+  font-size: 4.2rem
+  max-width: 1100px
+  margin: auto
+  line-height: 6.2rem
+  font-family: $play-font
+  color: $fadeGray
+  margin-top: 2.4rem
+
+
+//Index Covid Program Section
+.indexCovidSec
+  img
+    width: 100%
+.covidProgramSec
+  text-align: center
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: $custom-blue
+  &::after
+    @include horizontalBar(24px)
+    bottom: 15%
+  h2
+    font-size: $md-size
+    font-family: $lato
+    color: $anotherGrey
+    letter-spacing: 2px
+    margin-bottom: $md-size
+    text-transform: uppercase
+    font-weight: 600
+    font-family: $lato
+  p
+    color: white
+    max-width: 540px
+    font-size: $md-size + .4rem
+    line-height: 3.6rem
+    font-family: $latoLi
+  .programLearnMore
+    color: $anotherGrey
+    font-size: 1.6rem
+    letter-spacing: .4px
+    font-weight: 600
+    margin-top: $extra-lg-size
+//Footer Design
+.footer
+  background: $black
+  padding: 5rem 0
+  color: white
+  font-family: $lato
+  p
+    font-size: $base-size
+    line-height: 2.2rem
+  h3
+    font-family: $lato
+    font-size: $base-size
+    color: $anotherGrey
+    letter-spacing: 1px
+    margin-bottom: $md-size
+.footerBottom
+  display: flex
+  width: 100%
+  align-items: center
+  padding: 0 1.5rem
+  padding-top: $extra-lg-size
+  font-family: $latoLi
+
+.designedBy
+  margin-left: auto

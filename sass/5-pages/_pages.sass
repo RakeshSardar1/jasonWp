@@ -1,0 +1,478 @@
+//Project Page
+.pageBanner
+  background: $custom-blue
+.projectBannerContent
+  max-width: 792px
+  margin: auto
+  text-align: center
+  padding: $extra-lg-size * 2 0
+  position: relative
+  &::after
+    @include horizontalBar(80px)
+    bottom: -8.5%
+  h3
+    color: white
+    margin-top: $extra-mid-size
+    font-size: 3rem
+    line-height: 4.2rem
+    letter-spacing: 1px
+    font-weight: 400
+  h1
+    color: $anotherGrey
+    font-size: $md-size
+    text-transform: uppercase
+    font-weight: 700
+    font-family: $lato
+    letter-spacing: 2px
+  p
+    color: white
+    margin-top: 1.6rem
+    font-size: $base-size
+    color: $anotherWhite
+    font-family: $lato
+//Second Div
+.projectBannerSecondSec
+  text-align: center
+  padding: $lg-size * 2 0
+  max-width: 792px
+  margin: auto
+  p
+    font-size: $md-size - .3rem
+    line-height: 3.4rem
+    color: $black
+    font-family: $latoLi
+.secondDivTitle
+  color: $grey
+  text-transform: uppercase
+  font-family: $lato
+  font-size: $base-size + .2rem
+  line-height: 2.4rem
+  font-weight: 700
+  margin-bottom: $md-size
+
+//Project Page
+.projectPosts
+  margin-bottom: $lg-size
+  a
+    color: $blue
+    &:hover
+      text-decoration: none
+.customProjectEachTopicSec
+  // text-align: center
+.projectPostFeatures
+  max-width: 355px
+  height: 355px
+  width: 100%
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+.projectEachTitle
+  position: relative
+  margin: $base-size 0
+.projectEachCat
+  font-family: $lato
+  display: flex
+  margin-left: $base-size
+  align-items: center
+  color: $blue
+  font-size: 1.6rem
+  &::after
+    content: ''
+    height: 6px
+    width: 6px
+    background: $blue
+    position: absolute
+    left: 0
+.customFaqTopicTitle
+  font-size: 2.6rem
+  letter-spacing: 1px
+  color: $black
+  a
+    color: $black
+    &:hover
+      text-decoration: none
+.projectAuthorName
+  margin-top: .8rem
+  font-family: $latoLi
+  p
+    margin: 0
+    color: $fadeGray
+
+
+//Single Page
+.singleProjectTop
+  background: $fadeWhite
+  text-align: center
+  position: relative
+  &::after
+    @include horizontalBar(40px)
+    bottom: 0
+.breadCrumbType
+  color: $black
+  text-transform: capitalize
+  font-size: 1.6rem
+  padding: $md-size 0
+  border: 1px solid $border
+  font-family: $lato
+.singlePageCurrentCat
+  a
+    color: $grey
+.singlePageCustomTitle
+  padding: $extra-lg-size +$md-size 0
+  font-size: $lg-size
+  letter-spacing: 0.8px
+  line-height: 5.2rem
+  margin: 0
+.singlePostDetails
+.singlePostFeaturesImg
+  width: 100%
+  height: 588px
+  img.attachment-post-thumbnail
+    height: 100%
+    width: 100%
+    object-fit: cover
+.mainSingleContent
+  margin: auto
+  border-bottom: 1px solid $anotherGrey
+  padding-bottom: $lg-size
+  p
+    width: 588px
+    margin: $lg-size auto
+    color: $black
+    font-size: $md-size
+    line-height: 3.2rem
+    font-family: $latoLi
+.wp-block-columns
+  .wp-block-column
+    figcaption
+      text-align: left
+    &:first-child
+      text-align: center
+.wp-block-image
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+.projectCatTop
+  background: $fadeWhite
+  text-align: center
+  padding: $lg-size * 1.4 0
+  position: relative
+  &::after
+    @include horizontalBar(40px)
+    bottom: 0
+  p
+    font-weight: 600
+    color: $grey
+    letter-spacing: 1px
+    text-transform: uppercase
+    font-size: 1.6rem
+    margin-bottom: $md-size
+.customPostType
+  font-family: $lato
+  font-size: 1.6rem
+  font-weight: 700
+  letter-spacing: 1px
+.projectCatTitle
+  font-size: $lg-size
+  line-height: 5.2rem
+  letter-spacing: 0.8px
+  color: $black
+.secondCatDivTitle
+  color: $grey
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 1.7rem
+  font-family: $lato
+  letter-spacing: 1px
+.projectCatSecondSec
+  max-width: 70%
+  margin: 3rem auto
+  // padding: $md-size * 1.4 0
+.secondCatDivPara
+  font-size: $md-size - .3rem
+  color: $black
+  line-height: 3.4rem
+  font-family: $latoLi
+.projectCatSecondSec:first-child
+  border-right: 1px solid $fadeWhite
+  padding-right: $extra-lg-size
+.projectCatSecondSec:nth-child(2)
+  margin-left: $extra-lg-size
+.projectCatSecondDiv
+  margin: $md-size * 2.3 0
+.firstProjectCatDiv
+  display: flex
+  max-width: 70%
+  margin: auto
+  border-bottom: 1px solid $grey
+.seeMoreBtnSec
+  margin: $extra-lg-size 0
+  text-align: center
+  border-bottom: 1px solid $grey
+  padding: $extra-lg-size 0
+.seeMoreBtnProject
+  @extend .commonBtn
+.exploreTheme
+  color: $blue
+  font-size: $lg-size
+  text-align: center
+  padding-bottom: $extra-lg-size
+.singlePostSecondSec
+  font-size: $md-size
+  .container
+    padding: $extra-lg-size * 2 0
+    border-bottom: 1px solid $anotherGrey
+  div
+    border-right: 1px solid $border
+    &:last-child
+      border: none
+  h2
+    font-family: $lato
+    text-transform: uppercase
+    margin-bottom: $md-size
+    font-size: $base-size + .2rem
+    color: $grey
+    font-weight: 700
+    letter-spacing: 1px
+  i
+    color: $grey
+    margin-left: .3rem
+    font-size: $base-size
+  small
+    font-size: $base-size
+    font-family: $latoLi
+  p
+    font-family: $latoLi
+    a
+      text-transform: uppercase
+      font-size: $base-size
+      color: $black
+      font-weight: 700
+      letter-spacing: 0.4px
+    img
+      margin-left: .4rem
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+    font-family: $latoLi
+    li
+      margin-top: $normal-size
+      white-space: nowrap
+      img
+        margin-right: .3rem
+.pageProject
+  border-bottom: 1px solid $anotherGrey
+  padding-bottom: $extra-lg-size
+
+
+//About Us Page
+.aboutWhatWeFound
+  padding: $extra-lg-size + $base-size 0
+  h3
+    color: $deepGray
+    text-transform: uppercase
+    font-weight: 600
+    font-family: $lato
+    letter-spacing: 1px
+    font-size: 1.6rem
+    margin-bottom: $base-size
+  p
+    color: $fadeGray
+    font-size: $base-size
+    line-height: 2.2rem
+    max-width: 292px
+    font-family: $lato
+.aboutPageLearnMore
+  text-align: center
+  margin: $extra-lg-size 0
+.founderStory
+  color: $black
+  padding-bottom: $extra-lg-size
+  h3
+    font-size: $extra-mid-size + .2rem
+    line-height: 4.2rem
+    letter-spacing: 1px
+    margin-bottom: $normal-size
+  h4
+    font-family: $lato
+    letter-spacing: 0.4px
+    text-transform: uppercase
+    font-weight: 600
+  p
+    font-size: $md-size - .3rem
+    line-height: $extra-mid-size
+    margin-top: $base-size
+    max-width: 556px
+    font-family: $lato
+.ourTeam
+  border-top: 1px solid $anotherGrey
+  padding: $extra-lg-size 0
+  .row
+    margin-bottom: $lg-size * 2
+.aboutUsTeamMember
+  border-right: 1px solid $border
+  padding-right: $md-size
+  img
+    width: 100%
+  h3
+    font-size: $extra-mid-size
+    line-height: 4.2rem
+    letter-spacing: 1px
+    color: $black
+    margin: $base-size 0
+  h4
+    font-family: $lato
+    text-transform: uppercase
+    color: $fadeGray
+    font-size: $base-size - .2rem
+    margin: $normal-size 0
+    font-weight: 600
+  p
+    color: $fadeGray
+    font-family: $lato
+.youCanHelp
+  background: $darkGrey
+  text-align: center
+  padding: $extra-lg-size *2 0
+  position: relative
+  &::after
+    @include horizontalBar(24px)
+    bottom: 15%
+  h2
+    font-family: $lato
+    text-transform: uppercase
+    color: $anotherGrey
+    font-weight: 600
+    letter-spacing: 1.7px
+  p
+    max-width: 900px
+    margin: $md-size auto
+    color: white
+    font-size: 2.2rem
+    font-weight: 300
+  a
+    text-transform: uppercase
+    color: $anotherGrey
+    font-weight: 600
+    font-size: 1.6rem
+    letter-spacing: 0.4px
+.awardSection
+  margin: $lg-size auto
+.singleAward
+  max-width: 792px
+  padding: $lg-size
+  margin: auto
+  .row
+    border-bottom: 1px solid $border
+    div
+      padding-bottom: $extra-mid-size
+  h3
+    font-family: $lato
+    color: $deepGray
+    font-size: 1.6rem
+    font-weight: 700
+    letter-spacing: 1px
+    line-height: 2.4rem
+    margin-bottom: $md-size
+    text-transform: uppercase
+  p
+    font-size: $md-size - .2rem
+    line-height: $extra-mid-size
+    font-family: $lato
+
+//What We Fund
+.whatWeFundSecondDiv
+  .container
+    border-bottom: 1px solid $anotherGrey
+    padding: $extra-lg-size * 1.5
+    font-family: $lato
+    font-size: $md-size - .2rem
+    max-width: 70%
+    p
+      max-width: 588px
+      margin: auto
+.howToApply
+  padding: $lg-size 0
+  .container
+    border-bottom: 1px solid $anotherGrey
+  .commonH2
+    text-align: left
+  .applySec
+    font-family: $lato
+    max-width: 588px
+    margin: $md-size auto
+    font-size: $md-size - .2rem
+    line-height: $extra-mid-size
+    padding-bottom: $extra-lg-size
+
+  p
+    margin-bottom: $extra-lg-size
+.reports
+  padding-bottom: $extra-lg-size
+  h3
+    font-size: 1.6rem
+    line-height: 2.4rem
+    color: $deepGray
+    font-family: $lato
+    font-weight: 700
+    text-transform: uppercase
+  p
+    font-family: $lato
+    line-height: 2.2rem
+  a
+    color: $fadeGray
+    letter-spacing: 0.4px
+    line-height: 2.2rem
+    font-family: $lato
+    font-weight: 700
+    text-transform: uppercase
+  img
+    width: 100%
+  .aboutMemberFeaturedImg
+    img
+      margin-bottom: $md-size
+  .row
+    div
+      border-right: 1px solid $border
+  .downloadArrow
+    width: initial
+//Resources Page
+.mediaAndPress
+  padding: $extra-lg-size * 1.5 0
+  .container
+    padding: $extra-lg-size * 1.5 0
+    border-bottom: 1px solid $anotherGrey
+  .fullDivMedia
+    padding: $extra-lg-size 0
+    border-bottom: 1px solid $border
+    h3
+      font-size: $extra-mid-size + .2rem
+      line-height: 4.2rem
+      letter-spacing: 1px
+  img.attachment-large.size-large
+    width: 100%
+  .normalDiv
+    margin-top: $extra-lg-size
+    .aboutMemberFeaturedImg
+      overflow: hidden
+    img.attachment-large.size-large
+      margin-bottom: $base-size + .3rem
+    h3
+      font-family: $latoLi
+      margin-bottom: .8rem
+      font-size: $md-size + .4rem
+      line-height: 3.6rem
+    p
+      font-family: $lato
+    a
+      font-weight: 700
+      color: $fadeGray
+      font-family: $lato
+      text-transform: uppercase
+      img.rightArrow
+        margin-left: $normal-size
+        position: relative
+        top: -1px
